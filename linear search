@@ -1,0 +1,29 @@
+# include<stdio.h>
+int main()
+ {    int a=5;
+     int i[a],k,m;
+     int f = 1;
+     for (k=0;k<a;k++)
+     {
+         printf("entr %d data \n",k+1);
+         scanf("%d",&i[k]);
+     }
+     printf("enter a number to search");
+     scanf("%d",&m);
+     for(k=0;k<a;k++)
+     {
+       if(m==i[k])
+       {
+           printf("num found\n");
+           f = 0;
+            break;
+           }
+     }
+       if(f == 1)
+       {
+           printf("num not found\n");
+       }
+     
+
+     return 0;
+ }    
