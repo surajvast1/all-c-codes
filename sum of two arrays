@@ -1,0 +1,33 @@
+# include<stdio.h>
+int main()
+{    
+   int i,j,a[3][3],m[3][3],k,l;
+   for(i=0;i<3;i++)
+   {
+       for(j=0;j<3;j++)
+       {
+          scanf("%d",&a[i][j]);
+       }
+       
+   }
+    for(k=0;k<3;k++)
+   {
+       for(l=0;l<3;l++)
+       {
+          scanf("%d",&m[k][l]);
+       }
+   }
+   for(i=0;i<3;i++)
+   {
+      for(j=0;j<3;j++)
+      {   
+         int c= a[i][j] + m[i][j];
+          printf("%d\t",c);
+      }
+      printf("\n");
+   }
+   return 0;
+  }
+
+
+
